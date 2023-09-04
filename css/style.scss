@@ -39,12 +39,15 @@
 
 /* https://www.crocus.co.kr/1582 */
 
-#welcome .wel_bg {}
+#welcome .wel_bg {
+   
+}
 
 #welcome .line {
     margin: 0 auto;
-    margin-top: 200px;
-    width: 65%;
+    margin-top: 240px;
+
+    width: 100%;
     height: 2px;
     background: linear-gradient(to left, #fc5c7d, #6a82fb);
 }
@@ -68,16 +71,46 @@
     letter-spacing: 4px;
 
     position: absolute;
-    top: -100px;
+    top: -140px;
     font-weight: 300;
     margin-top: -65px;
 
-    /*IMPORTANT PART*/
-    background: linear-gradient(to right, #fc5c7d, #6a82fb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+font-weight: 800;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        -webkit-filter: blur(20px);
+        filter: blur(20px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+        background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, #9E2053 1em, orange 50%), repeating-linear-gradient(45deg, #111626, #111626 1em, pink 1em, #571B3D 50%), ;
+        background-size: 3em 3em, 2em 2em;
+        animation-name: ani;
+        animation-duration: 40s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
 }
+@keyframes ani {
+    from {
+        background-position: 0 0;
+    }
 
+    to {
+        background-position: 400% 0;
+    }
+}
 /*############### #main ###############  */
 
 #main {
