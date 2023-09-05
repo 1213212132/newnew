@@ -35,7 +35,16 @@
 
 
         <div id="welcome">
-            <div class="line"></div>
+            <div class="sky">
+                <div class="moon"></div>
+                <div class="stars star1"></div>
+                <div class="stars star2"></div>
+                <div class="stars star3"></div>
+                <div class="stars star4"></div>
+                <div class="stars star5"></div>
+                <div class="stars star6"></div>
+            </div>
+
 
             <div class="wel_bg" data-600="opacity:1" data-800="opacity:0"></div> <!-- //wel_bg -->
             <div class="wel_text" data-0="opacity:1; left: 50%; top:52%;"
@@ -44,15 +53,25 @@
                 data-800="left: 0%; top:-29%; transform: translateX(-50%) scale(8);"
                 data-900="left: 0%; top:-30%; transform: translateX(-50%) scale(8); opacity:1;"
                 data-1000="left: 0%; top:-40%; transform: translateX(-50%) scale(13); opacity:0;">
-                <h2>
-                    <span class="" data-0="opacity:1" data-300="opacity:0">WELCOME TO<br> JINHYUK </span>
+                <h2 class="holographic">
+                    <span data-0="opacity:1" data-300="opacity:0">WELCOME TO<br> JINHYUK </span>
                     PORTFOLIO
                 </h2>
-
-                <div class="line"></div>
             </div><!-- //wel_text -->
 
+
         </div>
+
+
+        <script>const text = document.querySelector('.holographic');
+
+            text.addEventListener('mousemove', (e) => {
+                gsap.to(text, {
+                    '--x': `${(e.offsetX / window.innerWidth) * 100}%`,
+                    '--y': `${(e.offsetY / window.innerHeight) * 100}%`,
+                });
+            });
+        </script>
 
         <div id="main" data-700="opacity:0" data-1000="opacity:1">
             <section id="home" data-4000="transform:translateY(-1%);" data-4300="transform:translateY(-100%);">
@@ -67,6 +86,7 @@
                 </div><!-- //nav -->
                 <div class="content">
                     <div class="tit">
+
                         <div class="desc">
                             <div class="keyword">
                                 <span>K</span>
@@ -77,96 +97,56 @@
                                 <span>R</span>
                                 <span>D</span>
                             </div><!-- //keyword -->
-                            <h2 data-2000="display:block;" data-2300="display:none;">#sensuous</h2>
+                            <h2 data-2000="display:block;" data-2300="display:none;">#INTRODUCE</h2>
                             <h2 data-2000="display:none; " data-2300="display:block;" data-2900="display:block;"
-                                data-3100="display:none;">#Realiable </h2>
-                            <h2 data-2900="display:none;" data-3100="display:block;">#AMBITION</h2>
+                                data-3100="display:none;">#MOTTO </h2>
+                            <h2 data-2900="display:none;" data-3100="display:block;">#PORTFOLIO</h2>
                             <p data-2000="display:block;" data-2300="display:none;">안녕하세요! 저의 이름은 이진혁입니다.</p>
                             <p data-2000="display:none;" data-2300="display:block;" data-2900="display:block;"
-                                data-3100="display:none;">책임감있는 신입을 찾고계신가요?</p>
-                            <p data-2900="display:none;" data-3100="display:block;">그렇다면 제 포부가 가득담긴<br> 포트폴리오를 눈여겨 봐주세요!
+                                data-3100="display:none;">저는 성실, 노력이 저의 장점입니다.</p>
+                            <p data-2900="display:none;" data-3100="display:block;">저의 포트폴리오를 봐주세요. <br>
+                                감사합니다!
                             </p>
+
+
+
+
                             <div class="line">
-                                <span data-2000="bottom: 45%;" data-2300="  bottom: 0%;" data-3100="  bottom: 0%;"
-                                    data-3400="bottom: 45%;"></span>
-                                <span data-2000="  left: 37%;" data-2300="  left: 0%;" data-3100="  left: 0%;"
+                                <span data-2000="display:block;  bottom: 45%;" data-2300="display:none"
+                                    data-3100="display:block;   bottom: 0%;"
+                                    data-3400="display:block; bottom: 45%;"></span>
+                                <span data-2000="  left: -37%;" data-2300="  left: 0%;" data-3100="  left: 0%;"
+                                    data-3400="left: -37%;"></span>
+                                <span data-2000="display:block; top: 96%;" data-2300="display:none"
+                                    data-3100="display:block;   top: 99.3%"
+                                    data-3400="display:block;  top: 96%;"></span>
+                                <span data-2000="  left: 37%;" data-2300="left: 0%;" data-3100="left: 0%;"
                                     data-3400="left: 37%;"></span>
-                                <span data-2000=" top: 156%;" data-2300="  top: 99%;" data-3100="  top: 99.3%"
-                                    data-3400="top: 156%;"></span>
-                                <span data-2000="  left: -27%;" data-2300="left: 0%;" data-3100="left: 0%;"
-                                    data-3400="left: -27%;"></span>
                             </div>
-                        </div>
-                        <div class="tit_bg">
-                            <img data-2000="opacity:1;" data-2300="opacity:0;" src="img/home/suche1.png" alt="수채화물감1">
-                            <img src="img/home/suche2.png" alt="수채화물감2" data-2000="opacity:0; transform:scale(0);"
-                                data-2300="opacity:1; transform:scale(1);" data-2900="opacity:1;"
-                                data-3100="opacity:0;">
-                            <img src="img/home/suche3.jpg" alt="수채화물감3" data-3100="opacity:0;" data-3400="opacity:1;">
+                            <div class="gooey" aria-hidden="true"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" stdDeviation="50" result="blur" />
+                                        <feColorMatrix in="blur" mode="matrix"
+                                            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo" />
+                                        <feBlend in="SourceGraphic" in2="goo" />
+                                    </filter>
+                                </defs>
+                            </svg>
+
                         </div>
                     </div>
-                    <div class="slide_box_wraper">
-                        <div class="slide_box box1">
-                            <img src="img/home/cardbg1.jpg" alt="배경카드1" data-2000="opacity:1;""  data-2300= "
-                                opacity:0;">
-                            <img src="img/home/cardbg2.jpg" alt="배경카드2" data-2000="opacity:0" data-2300="opacity:1;"
-                                data-2900="opacity:1;" data-3100="opacity:0;">
-                            <img src="img/home/cardbg3.jpg" alt="배경카드3" data-3100="opacity:0;" data-3400="opacity:1;">
-                        </div>
-                        <div class="slide_box box2">
-
-                            <div class="box2_1st" data-2000=" 
-              transform: translate(0%,0%) rotate(15deg); opacity:1;"
-                                data-2300=" transform: translate(-20%,-50%) rotate(-15deg); opacity:0;">
-
-                            </div>
-
-                            <div class="box2_2nd"
-                                data-2000="  left: 8px; top: 731px; transform: translate(0%, 0%) rotate(50deg); opacity:0;"
-                                data-2300="  left: 7px; top: -9px; transform: translate(0%, 0%) rotate(15deg); opacity:1;"
-                                data-2900="  left: 7px; top: -9px; transform: translate(0%, 0%) rotate(15deg); opacity:1;"
-                                data-3100=" transform: translate(-20%,-50%) rotate(-15deg); opacity:0;">
-                            </div>
-                            <div class="box2_3th"
-                                data-3100="left: 8px; top: 731px; transform: translate(0%, 0%) rotate(50deg); opacity:0;"
-                                data-3400="left: 7px; top: -9px; transform: translate(0%, 0%) rotate(15deg); opacity:1;">
-
-                            </div>
-                        </div>
-                        <div class="slide_box box3">
-                            <img src="img/home/img1.jpeg" alt="예리" data-2000="opacity:1;" data-2300="opacity:0;">
-                            <img src="img/home/img2.jpeg" alt="예리" data-2000="opacity:1;" data-2300="opacity:0;">
-
-                            <img src="img/home/img3.jpeg" alt="예리" data-2300="opacity:0;" data-2500="opacity:1;">
-                            <img src="img/home/img4.jpg" alt="예리" data-2300="opacity:0;" data-2500="opacity:1;">
-                            <img src="img/home/img5.jpg" alt="예리" data-3100="opacity:0;" data-3400="opacity:1;">
-                            <img src="img/home/img6.jpg" alt="예리" data-3100="opacity:0;" data-3400="opacity:1;">
-                        </div>
-                    </div><!-- //content -->
+                </div>
+                <!-- //content -->
             </section> <!-- //home -->
             <section id="about" data-4000="z-index:-10; transform:translateY(100%)"
                 data-4300="z-index:1; transform:translateY(0%)" data-11500="transform:translateX(0%);"
                 data-12000="transform:translateX(-100%);">
                 <h2>ABOUT ME</h2>
+
                 <div class="about_bg">
-                    <div class="yellowbox" data-4100="transform:translateX(-100%);"
-                        data-4400="transform:translateX(0%);"></div>
-                    <div class="whitebox"></div>
-                    <div class="circle_img">
-                        <img src="img/about/about_bg.jpg" alt="">
-                    </div>
-                    <div class="rotate1">
-                        <!--rotate 애니-->
-                        <div class="rotate_line1">
-                        </div>
-                        <!--border애니-->
-                    </div>
-                    <div class="rotate2">
-                        <!--rotate 애니-->
-                        <div class="rotate_line2">
-                        </div>
-                        <!--border애니-->
-                    </div>
+
 
                 </div><!-- //about_bg -->
                 <div class="about_content easypieChart" data-4100="transform:scaleY(0);"
@@ -178,11 +158,8 @@
                         <span>#04</span>
                         <h2>hobby</h2>
                         <ul>
-                            <li>애견 카페</li>
-                            <li>맛집 탐방</li>
-                            <li>원데이클래스</li>
-                            <li>보드게임</li>
-                            <li>런데이</li>
+                            <li>야구 시청</li>
+                            <li>독서</li>
                         </ul>
                     </div>
                     <div class="card2 card" data-5200="opacity:0; transform:translate(0%,200%);"
@@ -192,7 +169,7 @@
                         <span>#02</span>
                         <h2>Education</h2>
                         <ul>
-                            <li>2022.02 <br> 반응형 웹디자인(UIUX) & 웹퍼블리셔 디지털 실무 양성과정 수료 </li>
+                            <li>2023.09 <br> 반응형 웹디자인(UIUX) & 웹퍼블리셔 디지털 실무 양성과정 수료 </li>
                         </ul>
                     </div>
                     <div class="card3 card" data-5900="opacity:0; transform:translate(0%,200%);"
@@ -202,17 +179,19 @@
                         <span>#03</span>
                         <h2>certificate</h2>
                         <ul>
-                            <li>컴퓨터그래픽스 운용기능사</li>
-                            <li>컴퓨터활용능력 2급</li>
-                            <li>CATIA V5</li>
-                            <li>자동차운전면허 2종 보통</li>
+                            <li>CS리더스관리사1급</li>
+                            <li>SMAT경영1급</li>
+                            <li>한국사2급</li>
+                            <li>자동차운전면허 1종 보통</li>
+                            <li>ITQ한글 1급</li>
+                            <li>ITQ퍼워포인트 2급</li>
                         </ul>
                     </div>
                     <div class="card4 card" data-4400="opacity:0; transform:translate(0%,200%);"
                         data-5400="opacity:1; transform:translate(0%,0%);" data-9700="transform:translate(0%,0%);"
                         data-10500="transform:translate(-300%,0%);">
                         <div class="about_img">
-                            <img src="img/about/about_img1.jpg" alt="예리">
+
                         </div>
                     </div>
                     <div class="card5 card" data-5000="opacity:0; transform:translate(0%,200%);"
@@ -222,10 +201,10 @@
                         <span>#01</span>
                         <h2>Profile</h2>
                         <ul>
-                            <li>정이름(Jeong Name)</li>
-                            <li>1900.00.00</li>
-                            <li>010-3333-3333</li>
-                            <li>email@naver.com</li>
+                            <li>이진혁</li>
+                            <li>1998.11.17</li>
+                            <li>010-2516-0475</li>
+                            <li>ljf135798@naver.com</li>
                         </ul>
                     </div>
                     <div class="card6 card " data-7400="opacity:0; transform:translate(0%,100%);"
@@ -234,14 +213,11 @@
                         data-10500="transform:translate(200%,0%); background-color:rgb(244,244,244);">
                         <span>#07</span>
                         <h2>JQUERY & JAVASCRIPT</h2>
-                        <ul data-10300="display:block" data-10400="display:none;">
+                        <ul data-10300="display:block">
                             <li>플러그인 활용 가능</li>
                             <li>효과 및 애니메이션 구현가능</li>
                         </ul>
-                        <div class="box" data-10300="display:none" data-10400="display:block;">
-                            <div class="chart3 chart" data-percent="70"></div>
-                            <h3 data-rate="65"></h3>
-                        </div> <!-- //box -->
+
                     </div>
                     <div class="card7 card " data-6700="opacity:0; transform:translate(0%,100%);"
                         data-7500="opacity:1; transform:translate(0%,0%);"
@@ -249,28 +225,21 @@
                         data-10500="transform:translate(-100%,0%); background-color:rgb(244,244,244);">
                         <span>#05</span>
                         <h2>HTML</h2>
-                        <ul data-10300="display:block" data-10400="display:none;">
+                        <ul data-10300="display:block">
                             <li>레이아웃 설계 가능</li>
                             <li>콘탠츠 내용에 알맞은 시맨틱태그를 사용하여 코드 작성 가능</li>
                         </ul>
-                        <div class="box " data-10300="display:none" data-10400="display:block;">
-                            <div class="chart1 chart" data-percent="85"></div>
-                            <h3 data-rate="85"></h3>
-                        </div> <!-- //box -->
                     </div>
                     <div class="card8 card " data-8100="opacity:0; transform:translate(0%,100%);"
                         data-9700="opacity:1; transform:translate(0%,0%);  background-color:rgb(255,255,255);"
                         data-10500="transform:translate(100%,0%);  background-color:rgb(244,244,244);">
                         <span>#08</span>
                         <h2>POTOSHOP & IIIUSTRATOR</h2>
-                        <ul data-10300="display:block" data-10400="display:none;">
+                        <ul data-10300="display:block">
                             <li> 전체적인 툴 사용가능</li>
                             <li> 아이콘 제작 가능 </li>
                         </ul>
-                        <div class="box" data-10300="display:none" data-10400="display:block;">
-                            <div class="chart4 chart" data-percent="90"></div>
-                            <h3 data-rate="90"></h3>
-                        </div> <!-- //box -->
+
                     </div>
                     <div class="card9 card " data-8800="opacity:0; transform:translate(0%,100%);"
                         data-9700="opacity:1; transform:translate(0%,0%);  background-color:rgb(255,255,255);"
@@ -296,15 +265,12 @@
                         data-10500="transform:translate(-300%,0%);  background-color:rgb(244,244,244);">
                         <span>#06</span>
                         <h2>CSS</h2>
-                        <ul data-10300="display:block" data-10400="display:none;">
+                        <ul data-10300="display:block">
                             <li> 미디어쿼리를 이용한 반응형 웹사이트 제작가능 </li>
                             <li> CSS 애니메이션 제작 가능 </li>
                             <li> flex,float 사용 가능 </li>
                         </ul>
-                        <div class="box" data-10300="display:none" data-10400="display:block;">
-                            <div class="chart2 chart" data-percent="90"></div>
-                            <h3 data-rate="90"></h3>
-                        </div> <!-- //box -->
+
                     </div>
                 </div><!-- //about_content -->
             </section><!-- //about -->
@@ -323,7 +289,7 @@
                     <div class="panerl_1" data-12000="left:60px" data-15000="left:-1620px">
                         <div class="p_tit p_tit1">
                             <span class="p_num">Portfolio 01</span>
-                            <span class="p_name">커버낫 &middot; 뮤자인 &middot; 메가박스 &middot; 웹표준</span>
+                            <span class="p_name">상상짬뽕</span>
                         </div>
                         <div class="web_fo" data-15100="transform:translateX(0%)"
                             data-17900="transform:translateX(-80%)">
