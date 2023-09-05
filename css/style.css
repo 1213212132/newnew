@@ -38,7 +38,7 @@
 #welcome .line {
   margin: 0 auto;
   margin-top: 240px;
-  width: 100%;
+  width: 65%;
   height: 2px;
   background: linear-gradient(to left, #fc5c7d, #6a82fb);
 }
@@ -60,7 +60,7 @@
   font-family: sans-serif;
   letter-spacing: 4px;
   position: absolute;
-  top: -140px;
+  top: -120px;
   font-weight: 300;
   margin-top: -65px;
   background: white;
