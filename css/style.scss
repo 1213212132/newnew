@@ -104,12 +104,19 @@
     --star-size-m: 20px;
     --star-size-l: 26px;
 
+    --pine-shape: polygon(49% 0, 11% 35%, 34% 30%, 6% 65%, 34% 58%, 1% 90%, 41% 82%, 36% 100%, 60% 100%, 56% 82%, 96% 89%, 67% 58%, 93% 63%, 62% 30%, 87% 34%);
 
+    --cabin-shape: polygon(50% 0%, 100% 30%, 85% 31%, 85% 100%, 15% 100%, 15% 30%, 0 30%);
+
+    --door-shape: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0% 20%);
+
+    --window-firelight: window-flicker 0.5s infinite, window-light-on 14s forwards;
+    --door-firelight: door-flicker 0.5s infinite;
 }
 
 body {
     //background: black;
-
+    animation: darken 14s ease-out forwards;
 }
 
 .sky {
@@ -197,6 +204,70 @@ body {
     -webkit-animation: twinkle 0.7s infinite, fade-in 20s ease 0s 1;
 }
 
+.fg {
+    position: relative;
+    bottom: -455px;
+}
+
+.cabin {
+    position: absolute;
+    width: 200px;
+    height: 140px;
+    margin-left: 66%;
+    margin-top: 380px;
+    clip-path: var(--cabin-shape);
+    -webkit-clip-path: var(--cabin-shape);
+    animation: darken 14s ease-out forwards;
+}
+
+.window {
+    width: 22px;
+    height: 18px;
+    border-radius: 10%;
+    margin-top: 32%;
+    margin-left: 26%;
+    background: var(--light-yellow);
+    //box-shadow: 2px -2px 2px 2px var(--light-yellow);
+    opacity: 0;
+    animation: var(--window-firelight);
+    -webkit-animation: var(--window-firelight);
+}
+
+.doorframe {
+    width: 30px;
+    height: 56px;
+    border-radius: 40% 40% 10% 10%;
+    margin-top: 0%;
+    margin-left: 46%;
+    background: transparent;
+    //clip-path: var(--door-shape);
+    //-webkit-clip-path: var(--door-shape);
+    box-shadow: 2px -2px 2px 2px var(--light-yellow);
+    animation: var(--door-firelight);
+    -webkit-animation: var(--door-firelight);
+}
+
+.tree1 {
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    margin-left: 30%;
+    margin-top: 400px;
+    clip-path: var(--pine-shape);
+    -webkit-clip-path: var(--pine-shape);
+    animation: darken 14s ease-out forwards;
+}
+
+.tree2 {
+    position: absolute;
+    width: 80px;
+    height: 150px;
+    margin-left: 10%;
+    margin-top: 370px;
+    clip-path: var(--pine-shape);
+    -webkit-clip-path: var(--pine-shape);
+    animation: darken 14s ease-out forwards;
+}
 
 @keyframes sunset {
     0% {
@@ -273,6 +344,61 @@ body {
     }
 }
 
+@keyframes darken {
+    0% {
+        background: gray;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@keyframes window-flicker {
+    0% {
+        background: yellow;
+    }
+
+    50% {
+        background: var(--dark-yellow);
+    }
+
+    90% {
+        backgrond: orange;
+    }
+}
+
+@keyframes window-light-on {
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes door-flicker {
+    0% {
+        box-shadow: 2px -2px 2px 2px yellow;
+    }
+
+    50% {
+        box-shadow: 1px -1px 1px 1px var(--dark-yellow);
+    }
+
+    90% {
+        box-shadow: 2px -2px 2px 2px orange;
+    }
+}
+
+@keyframes door-light-on {
+    90% {}
+
+    100% {
+        box-shadow: 2px -2px 2px 2px;
+    }
+}
 
 
 
@@ -535,7 +661,7 @@ body {
     height: 100%;
     margin-top: 253px;
     margin-left: -276px;
-    transform: rotate(-37deg);
+    transform: rotate(-90deg);
 }
 
 
@@ -784,7 +910,7 @@ body {
 #web .p_desc {
     width: 1700px;
     height: 100%;
-    background: url(../img/portfolio/desc_bg.png) no-repeat -40px center;
+    background: url(../images/landscape-7283516_1920.jpg) no-repeat -40px center;
     background-size: cover;
 }
 
@@ -829,13 +955,14 @@ body {
 
 #web .panerl .panerl_1 {
     left: 60px;
-    width: 323%;
+    width: 300%;
     display: flex;
 }
 
 #web .panerl .panerl_2 {
-    left: 117px;
-    width: 100%;
+    left: 60px;
+    width: 360%;
+    display: flex;
 }
 
 #web .panerl .panerl_3 {
@@ -1356,6 +1483,7 @@ body {
 /*#####----- panerl_2 -----######  */
 .panerl_2 {
     display: flex;
+    width: 1920px;
 }
 
 .panerl_2 .web_fo2 {
@@ -1484,64 +1612,250 @@ body {
 }
 
 
-/* ---------- wenia ---------- */
+/* ---------- spacebox ---------- */
 
-.panerl_2 .web_fo2 .wenia {
+
+
+
+.spacebox {
+    display: flex;
+    margin-left: 800px;
+}
+
+.spacegbox .slide_wrap {
     position: relative;
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
 }
 
-.panerl_2 .web_fo2 .wenia .wenia_preveiw {
-    width: 1000px;
-    height: 600px;
+.spacebox .slide_wrap .monitor {
+    width: 800px;
+    height: 700px;
+
 }
 
-.w_ban {
-    width: 1000px;
-    height: 600px;
-    display: flex;
-}
-
-.w_ban img {
-    width: 500px;
-}
-
-.wenia_preveiw img {
-    height: 100%;
-    display: block;
-}
-
-.we_menu {
+.spacebox .slide_wrap .monitor_box {
     position: absolute;
-    left: 273px;
-    top: 128px;
+    top: 17px;
+    left: 21px;
+    background: url(../images/우주의조약돌.png) no-repeat;
+    width: 753px;
+    height: 372px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
 }
 
-.we_menu ul {
-    display: flex;
+
+.spacebox .slide_wrap .bottom_box:hover {
+    background-position: bottom;
 }
 
-.we_menu ul li {
-    padding: 0 13px;
-    font-size: 13px;
+.spacebox .slide_wrap .tablet {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 2550px;
+    bottom: 98px;
 }
 
-.panerl_2 .web_fo2 .wenia .we_desc {
-    display: block;
-    margin-left: 60px;
+.spacebox .slide_wrap .tablet_box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: url(../images/우주의조약돌-태블렛.png) no-repeat;
+    width: 270px;
+    height: 370px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.spacebox .slide_wrap .mobile {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 3100px;
+    bottom: 290px;
+}
+
+.spacebox .slide_wrap .mobile_box {
+    position: absolute;
+    top: 64px;
+    left: 27px;
+    background: url(../images/우주의\ 조약돌-mo.png) no-repeat;
+    width: 147px;
+    height: 274px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.spacebox .space_desc {
+    margin-left: 100px;
+    margin-top: 50px;
     font-size: 20px;
-    margin-top: 25px;
 }
 
-.panerl_2 .web_fo2 .wenia .we_logo {
-    width: 500px;
+.spacebox .space_desc .space_logo h3 {
+
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+    font-weight: 700;
+    color: #333;
+    line-height: 50px
 }
 
-.panerl_2 .web_fo2 .wenia .we_info {
-    text-align: center;
+
+.spacebox .space_info span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 10px;
+    font-size: 18px;
 }
+
+.spacebox .space_info p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    color: #666;
+
+    font-weight: 300;
+}
+
+.spacebox .space_desc .space_logo img {
+    height: 100%;
+}
+
+
+/*유니세프시작*/
+
+
+
+
+
+.unicefbox {
+    display: flex;
+    margin-left: 800px;
+}
+
+.unicefbox .slide_wrap {
+    position: relative;
+}
+
+.unicefbox .slide_wrap .monitor {
+    width: 800px;
+    height: 700px;
+
+}
+
+.unicefbox .slide_wrap .monitor_box {
+    position: absolute;
+    top: 17px;
+    left: 21px;
+    background: url(../images/유니세프.png) no-repeat;
+    width: 753px;
+    height: 372px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+
+.unicefbox .slide_wrap .bottom_box:hover {
+    background-position: bottom;
+}
+
+.unicefbox .slide_wrap .tablet {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 50px;
+    bottom: 98px;
+}
+
+.unicefbox .slide_wrap .tablet_box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: url(../images/유니세프-태블릿.png) no-repeat;
+    width: 270px;
+    height: 370px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.unicefbox .slide_wrap .mobile {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: -1px;
+    bottom: 221px;
+}
+
+.unicefbox .slide_wrap .mobile_box {
+    position: absolute;
+    top: 64px;
+    left: 27px;
+    background: url(../images/유니세프-mo.png) no-repeat;
+    width: 147px;
+    height: 274px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.unicefbox .unicef_desc {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.unicefbox .unicef_desc .unicef_logo h3 {
+
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+    font-weight: 700;
+    color: #333;
+    line-height: 50px
+}
+
+
+.unicefbox .unicef_info span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 10px;
+    font-size: 18px;
+}
+
+.unicefbox .unicef_info p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    color: #666;
+
+    font-weight: 300;
+}
+
+.unicefbox .unicef_desc .unicef_logo img {
+    height: 100%;
+}
+
+
+
 
 /* ---------- mac ---------- */
 
