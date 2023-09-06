@@ -229,10 +229,6 @@
   overflow: hidden;
 }
 
-#home {
-  background: url(../images/b.png);
-}
-
 #home .nav {
   position: relative;
   margin: 10px;
@@ -240,12 +236,12 @@
 }
 
 #home .nav ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
 #home .nav ul li {
-  width: 20%;
   text-align: center;
 }
 
@@ -767,14 +763,14 @@
 
 /* btn common */
 .btn {
+  position: relative;
+  left: 130px;
+  top: 10px;
   margin-top: 50px;
 }
 
-.btn ul {
-  display: block;
-}
-
 .btn ul li {
+  margin-right: 10px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -876,67 +872,27 @@
   margin-right: 24px;
 }
 
-/* ---------- musign ---------- */
-.musign {
-  margin-left: 300px;
-  display: flex;
-}
-
-.screen {
-  display: flex;
-  height: 1080px;
-}
-
-.screen img:nth-child(1) {
-  width: 400px;
-  margin-right: 28px;
-  transform: translateY(-3%) rotate(5deg);
-}
-
-.screen img:nth-child(2) {
-  width: 400px;
-  transform: translateY(-28%) rotate(5deg);
-}
-
-.m_desc {
-  margin-left: 130px;
-  font-size: 20px;
-  margin-top: 40px;
-}
-
-.m_desc .m_logo {
-  width: 400px;
-  height: 215px;
-}
-
-.m_desc .m_logo img {
-  height: 100%;
-}
-
-.m_desc .m_info {
-  width: 534px;
-}
-
-/* ---------- megabox ---------- */
-.megabox {
+/* ---------- web작업 ---------- */
+/* ---------- bugyeonbox ---------- */
+.bugyeonbox {
   display: flex;
   margin-left: 400px;
 }
 
-.megabox .slide_wrap {
+.bugyeonbox .slide_wrap {
   position: relative;
 }
 
-.megabox .slide_wrap .monitor {
+.bugyeonbox .slide_wrap .monitor {
   width: 800px;
   height: 700px;
 }
 
-.megabox .slide_wrap .monitor_box {
+.bugyeonbox .slide_wrap .monitor_box {
   position: absolute;
   top: 17px;
   left: 21px;
-  background: url(../img/portfolio/mega.png) no-repeat;
+  background: url(../images/부경대.jpeg) no-repeat;
   width: 753px;
   height: 372px;
   background-size: cover;
@@ -944,94 +900,193 @@
   background-position: top;
 }
 
-.megabox .slide_wrap .bottom_box:hover {
+.bugyeonbox .slide_wrap .bottom_box:hover {
   background-position: bottom;
 }
 
-.megabox .slide_wrap .tablet {
+.bugyeonbox .slide_wrap .tablet {
   position: absolute;
-  width: 400px;
+  width: 300px;
   height: 500px;
-  left: -148px;
+  left: -58px;
   bottom: 98px;
 }
 
-.megabox .slide_wrap .tablet_box {
+.bugyeonbox .slide_wrap .tablet_box {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  background: url(../img/portfolio/mega_tablet.png) no-repeat;
-  width: 360px;
-  height: 494px;
+  top: 15px;
+  left: 15px;
+  background: url(../images/부경대-태블릿.png) no-repeat;
+  width: 270px;
+  height: 370px;
   background-size: cover;
   transition: 3s;
   background-position: top;
 }
 
-.megabox .slide_wrap .mobile {
+.bugyeonbox .slide_wrap .mobile {
   position: absolute;
-  width: 250px;
+  width: 200px;
   height: 300px;
-  right: -89px;
-  bottom: 161px;
+  right: -29px;
+  bottom: 221px;
 }
 
-.megabox .slide_wrap .mobile_box {
+.bugyeonbox .slide_wrap .mobile_box {
   position: absolute;
-  top: 84px;
-  left: 33px;
-  background: url(../img/portfolio/mega_mobile.png) no-repeat;
-  width: 184px;
-  height: 330px;
+  top: 64px;
+  left: 27px;
+  background: url(../images/부경대-mo.png) no-repeat;
+  width: 147px;
+  height: 274px;
   background-size: cover;
   transition: 3s;
   background-position: top;
 }
 
-.megabox .mega_desc {
+.bugyeonbox .bugyeon_desc {
   margin-left: 100px;
   margin-top: 50px;
   font-size: 20px;
 }
 
-.megabox .mega_desc .mega_logo {
-  width: 600px;
-  height: 215px;
+.bugyeonbox .bugyeon_desc .bugyeon_logo h3 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: 50px;
 }
 
-.megabox .mega_desc .mega_logo img {
+.bugyeonbox .bugyeon_info span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+.bugyeonbox .bugyeon_info p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: 300;
+}
+
+.bugyeonbox .bugyeon_desc .bugyeon_logo img {
   height: 100%;
 }
 
-/* ---------- standard ---------- */
-.standard {
+/* ---------- sangsangbox ---------- */
+.sangsangbox {
   display: flex;
-  margin-left: 100px;
-  align-items: center;
+  margin-left: 800px;
 }
 
-.standard .web_s {
+.sangsangbox .slide_wrap {
+  position: relative;
+}
+
+.sangsangbox .slide_wrap .monitor {
   width: 800px;
-  height: 600px;
-  display: flex;
-  align-items: center;
+  height: 700px;
 }
 
-.standard .web_s img {
-  height: 100%;
+.sangsangbox .slide_wrap .monitor_box {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  background: url(../images/상상짬뽕.png) no-repeat;
+  width: 753px;
+  height: 372px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
 }
 
-.standard .s_desc {
+.sangsangbox .slide_wrap .bottom_box:hover {
+  background-position: bottom;
+}
+
+.sangsangbox .slide_wrap .tablet {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  left: -88px;
+  bottom: 98px;
+}
+
+.sangsangbox .slide_wrap .tablet_box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: url(../images/상상짬뽕-태블릿.png) no-repeat;
+  width: 270px;
+  height: 370px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
+}
+
+.sangsangbox .slide_wrap .mobile {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: -19px;
+  bottom: 221px;
+}
+
+.sangsangbox .slide_wrap .mobile_box {
+  position: absolute;
+  top: 64px;
+  left: 27px;
+  background: url(../images/상상짬뽕mo.png) no-repeat;
+  width: 147px;
+  height: 274px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
+}
+
+.sangsangbox .sangsang_desc {
   margin-left: 100px;
+  margin-top: 50px;
   font-size: 20px;
 }
 
-.standard .s_desc .s_info {
-  width: 413px;
+.sangsangbox .sangsang_desc .sangsang_logo h3 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: 50px;
 }
 
-.standard .s_desc .s_logo {
-  width: 240px;
+.sangsangbox .sangsang_info span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+.sangsangbox .sangsang_info p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: 300;
+}
+
+.sangsangbox .sangsang_desc .sangsang_logo img {
+  height: 100%;
 }
 
 /*#####----- panerl_2 -----######  */
