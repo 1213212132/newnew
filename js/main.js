@@ -87,40 +87,9 @@ $(function () {
     }, 600);
   });
 
-  //#web 맥도날드 호버이펙트
-
-  var myAnimation = new hoverEffect({
-    parent: document.querySelector('.my-div'),
-    intensity: 0.3,
-    image1: 'img/portfolio/mac_1-1.JPG', //이미지 파일 경로 확인
-    image2: 'img/portfolio/mac_1-2.JPG',
-    displacementImage: 'img/portfolio/displacement-5.png', //섞일 때 뒤에 섞이는 형태를 만들어주는 역할
-    imagesRatio: 600 / 500 // 이미지의 크기 조절
-  });
 
 
   //#web 스와이퍼
-
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    loop: true,
-    mousewheel: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    // autoHeight: true,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-
 
   //#contact 패럴랙스
   var scene = document.getElementById('scene');
