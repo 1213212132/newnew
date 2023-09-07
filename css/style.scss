@@ -429,7 +429,7 @@ body {
 
 #home .nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
 
 }
@@ -955,7 +955,7 @@ body {
 
 #web .panerl .panerl_1 {
     left: 60px;
-    width: 300%;
+    width: 450%;
     display: flex;
 }
 
@@ -967,7 +967,7 @@ body {
 
 #web .panerl .panerl_3 {
     left: 172px;
-    width: 100%;
+    width: 280%;
     display: flex;
 }
 
@@ -1125,6 +1125,7 @@ body {
 
 .bugyeonbox {
     display: flex;
+
     margin-left: 400px;
 }
 
@@ -1406,7 +1407,7 @@ body {
     position: absolute;
     top: 15px;
     left: 15px;
-    background: url(../images/LH-태블릿.png) no-repeat;
+    background: url(../images/lh-태블릿.png) no-repeat;
     width: 270px;
     height: 370px;
     background-size: cover;
@@ -1476,6 +1477,11 @@ body {
 .lhbox .lh_desc .lh_logo img {
     height: 100%;
 }
+
+
+
+
+
 
 
 
@@ -1855,11 +1861,128 @@ body {
 }
 
 
+/*아웃백박스*/
+
+
+.outbackbox {
+    display: flex;
+    margin-left: 800px;
+}
+
+.outbackbox .slide_wrap {
+    position: relative;
+}
+
+.outbackbox .slide_wrap .monitor {
+    width: 800px;
+    height: 700px;
+
+}
+
+.outbackbox .slide_wrap .monitor_box {
+    position: absolute;
+    top: 17px;
+    left: 21px;
+    background: url(../images/아웃백.png) no-repeat;
+    width: 753px;
+    height: 372px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+
+.outbackbox .slide_wrap .bottom_box:hover {
+    background-position: bottom;
+}
+
+.outbackbox .slide_wrap .tablet {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 50px;
+    bottom: 98px;
+}
+
+.outbackbox .slide_wrap .tablet_box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: url(../images/아웃백-태블릿.png) no-repeat;
+    width: 270px;
+    height: 370px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.outbackbox .slide_wrap .mobile {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    right: -1px;
+    bottom: 221px;
+}
+
+.outbackbox .slide_wrap .mobile_box {
+    position: absolute;
+    top: 64px;
+    left: 27px;
+    background: url(../images/아웃백-mo.png) no-repeat;
+    width: 147px;
+    height: 274px;
+    background-size: cover;
+    transition: 3s;
+    background-position: top;
+}
+
+.outbackbox .outback_desc {
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.outbackbox .outback_desc .outback_logo h3 {
+
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+    font-weight: 700;
+    color: #333;
+    line-height: 50px
+}
+
+
+.outbackbox .outback_info span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+    padding-bottom: 10px;
+    line-height: 10px;
+    font-size: 18px;
+}
+
+.outbackbox .outback_info p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    color: #666;
+
+    font-weight: 300;
+}
+
+.outbackfbox .outback_desc .outback_logo img {
+    height: 100%;
+}
+
+
 
 
 /* ---------- mac ---------- */
-
-
 
 .panerl_3 .web_fo3 {
     position: relative;
@@ -1867,7 +1990,184 @@ body {
     overflow-x: hidden;
 }
 
+.panerl_3 .web_fo3 h2 {
+    position: absolute;
+    left: 28%;
+    top: 10%;
+    font-family: 'GongGothicMedium';
+    font-size: 50px;
+}
 
+.panerl_3 .swiper {
+    width: 100%;
+    position: absolute;
+    left: -165px;
+    top: 221px;
+}
+
+.panerl_3 .swiper-slide {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.panerl_3 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.panerl_3 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 91px;
+    left: -159px;
+
+}
+
+.panerl_3 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid #cbd4d9;
+    opacity: 1;
+    background: #fff;
+}
+
+.panerl_3 .swiper-pagination-bullet-active {
+    border-radius: 5px;
+    background: #517180;
+    border: 1px solid transparent;
+}
+
+
+.panerl_3 .stit_wrap {
+    color: #111;
+    position: relative;
+    display: inline-block;
+    left: 29%;
+    top: 12%;
+}
+
+.panerl_3 .s_tit {
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'GongGothicMedium';
+    color: #333333;
+    text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgb(0 0 0 / 15%);
+}
+
+.panerl_3 .mark {
+    border-bottom: 4px solid #2C6BB2;
+    font-size: 24px;
+    width: 93px;
+    position: absolute;
+    top: -41px;
+    left: 0px;
+    transform: translate3d(0, 0, 0);
+    animation: mark-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl_3 .c,
+.panerl_3 .r,
+.panerl_3 .o,
+.panerl_3 .l1,
+.panerl_3 .l2 {
+    will-change: margin-left, margin-right;
+}
+
+.panerl_3 .c {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    animation: r-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl_3 .r {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    animation: e1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl_3 .o {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: s1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl_3 .l1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: l1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl_3 .l2 {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    animation: l2-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .stit_wrap {
+    color: #111;
+    position: relative;
+    display: inline-block;
+    left: 1%;
+    top: 12%;
+}
+
+.panerl .s_tit {
+    font-size: 65px;
+    font-weight: 600;
+    font-family: 'GongGothicMedium';
+    color: #333333;
+    text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgb(0 0 0 / 15%);
+}
+
+.panerl .mark {
+    border-bottom: 4px solid #2C6BB2;
+    font-size: 24px;
+    width: 93px;
+    position: absolute;
+    top: -41px;
+    left: 0px;
+    transform: translate3d(0, 0, 0);
+    animation: mark-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .c,
+.panerl .r,
+.panerl .o,
+.panerl .l1,
+.panerl .l2 {
+    will-change: margin-left, margin-right;
+}
+
+.panerl .c {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    animation: r-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .r {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    animation: e1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .o {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: s1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .l1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: l1-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.panerl .l2 {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    animation: r-anim 10s infinite cubic-bezier(0.55, 0, 0.1, 1);
+}
 
 /*############### #contact ###############  */
 
