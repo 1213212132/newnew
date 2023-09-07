@@ -1950,7 +1950,7 @@ body {
   top: 0;
   width: 100%;
   height: 100vh;
-  background: url(../img/contact/green.jpg) no-repeat center;
+  background: url(../images/water-bg.jpg) no-repeat center;
   background-size: cover;
   z-index: 100;
   overflow: hidden;
@@ -1962,7 +1962,7 @@ body {
   top: -131px;
   width: 30%;
   height: 171%;
-  background: #A2AD78;
+  background: url(../images/green_spalsh.png) no-repeat center;
   transform: rotate(-45deg);
 }
 
@@ -2053,14 +2053,13 @@ body {
   border-radius: 10%;
   filter: drop-shadow(12px 3px 13px #000);
   display: flex;
-  background: url(../img/contact/paper.JPG) no-repeat center;
+  background: url(../images/background-3138516_1280.jpg) no-repeat center;
   background-size: cover;
 }
 
 #contact .contact_box .c_box .con_left {
   margin: 70px 40px;
   width: 50%;
-  background: #fff;
   border-radius: 5%;
   padding: 38px 20px;
   box-sizing: border-box;
@@ -2120,8 +2119,7 @@ body {
 }
 
 #contact .contact_box .c_box .con_right .address {
-  background: #A2AD78;
-  width: 839px;
+  width: 829px;
   height: 242px;
   position: absolute;
   left: -468px;
@@ -2151,135 +2149,6 @@ body {
 
 #contact .contact_box .c_box .con_right .address ul li:nth-child(4) {
   font-family: "KyoboHandwriting2020A";
-}
-
-#contact .circle {
-  position: absolute;
-  right: 60px;
-  bottom: 47px;
-  z-index: 20;
-}
-
-#contact .circle .text_ani {
-  width: 300px;
-  height: 300px;
-  animation: rotate_image 6s linear infinite;
-  transform-origin: 50% 50%;
-}
-
-#contact .circle .text_ani img {
-  width: 100%;
-  height: 100%;
-}
-
-#contact .circle .circle_bg {
-  position: absolute;
-  left: 48px;
-  top: 41px;
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  background: #ececec;
-  overflow: hidden;
-}
-
-#contact .circle .circle_bg span {
-  font-family: "ghanachoco";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  color: #222;
-  font-size: 17px;
-}
-
-#contact .circle .circle_bg img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100px;
-  height: 100px;
-  transition: 0.5s cubic-bezier(0.85, 0, 0.3, 1);
-}
-
-#contact .circle .circle_bg img:nth-of-type(1) {
-  width: 120px;
-  height: 131px;
-  top: 128px;
-  left: 71px;
-}
-
-#contact .circle .circle_bg img:nth-of-type(2) {
-  left: -35px;
-  top: 81px;
-  transform: rotate(30deg);
-  width: 120px;
-  height: 120px;
-}
-
-#contact .circle .circle_bg img:nth-of-type(3) {
-  left: 39px;
-  top: 159px;
-}
-
-#contact .circle .circle_bg img:nth-of-type(4) {
-  left: 128px;
-  top: 42px;
-  width: 150px;
-  height: 150px;
-  transform: rotate(-69deg);
-}
-
-#contact .circle .circle_bg img:nth-of-type(5) {
-  left: -46px;
-  width: 200px;
-  height: 200px;
-  top: -58px;
-}
-
-#contact .circle .circle_bg img:nth-of-type(6) {
-  width: 120px;
-  height: 131px;
-  top: 128px;
-  left: 71px;
-}
-
-#contact .circle .circle_bg img:nth-of-type(7) {
-  left: 10px;
-  top: 105px;
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(1) {
-  top: 158px;
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(2) {
-  left: -60px;
-  top: 120px;
-  transform: rotate(40deg);
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(3) {
-  top: 168px;
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(4) {
-  left: 174px;
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(5) {
-  left: -92px;
-  top: -74px;
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(6) {
-  transform: rotate(180deg);
-}
-
-#contact .circle:hover .circle_bg img:nth-of-type(7) {
-  top: 150px;
 }
 
 #contact .to_top {
