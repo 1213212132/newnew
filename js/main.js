@@ -5,7 +5,7 @@ $(function () {
 
   Swal.fire({
     title: '환영합니다.',
-    text: '본사이트는 반응형으로 디자인 되었습니다.',
+    text: '포트폴리오를 봐주셔서 감사합니다.',
     icon: 'warning',
 
     showCancelButton: false, // cancel버튼 보이기. 기본은 원래 없음
