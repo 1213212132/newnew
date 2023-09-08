@@ -911,7 +911,7 @@ body {
 #web .p_desc {
     width: 1700px;
     height: 100%;
-    background: url(../images/landscape-7283516_1920.jpg) no-repeat -40px center;
+    background: url(../images/desc_bg.png) no-repeat -40px center;
     background-size: cover;
 }
 
@@ -1995,7 +1995,7 @@ body {
     position: absolute;
     left: 28%;
     top: 10%;
-    font-family: 'GongGothicMedium';
+
     font-size: 50px;
 }
 
@@ -2024,14 +2024,7 @@ body {
 
 }
 
-.panerl_3 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: transparent;
-    border: 1px solid #cbd4d9;
-    opacity: 1;
-    background: #fff;
-}
+.panerl_3 .swiper-pagination-bullet {}
 
 .panerl_3 .swiper-pagination-bullet-active {
     border-radius: 5px;
