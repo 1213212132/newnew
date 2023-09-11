@@ -49,24 +49,19 @@
   font-size: 99px;
   animation: wel_text_ani 3s ease-in-out both;
   text-align: center;
-  text-transform: uppercase;
-  font-family: "SDSamliphopangche_Outline";
+  font-family: "SF_IceLemon";
   position: absolute;
   top: -120px;
-  font-weight: 300;
   margin-top: -65px;
   -webkit-text-stroke: 1.5px #111;
   background: #f9f9f9;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-repeat: no-repeat;
-  background-image: linear-gradient(0deg, #f9f9f9 0%, #fff 50%, transparent 50%);
-  background-position: 100% 100%;
-  background-size: 100% 0%;
+  background-image: linear-gradient(0deg, #f9f9f9 0%, #fff 10%, transparent 50%);
   letter-spacing: 0;
   display: block;
   margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
 }
 
 /*애니*/
