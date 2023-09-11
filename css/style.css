@@ -846,6 +846,7 @@ body {
   position: relative;
   writing-mode: vertical-rl;
   padding: 33px 10px;
+  margin-left: 10px;
   font-size: 20px;
   height: 100%;
   background: #fff;
@@ -862,8 +863,10 @@ body {
 }
 
 .p_tit span {
+  position: relative;
   display: inline-block;
   width: 34px;
+  left: -5px;
 }
 
 .p_name {
