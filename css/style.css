@@ -781,7 +781,7 @@ body {
   transform: translateY(-50%);
   left: -100px;
   font-size: 32px;
-  color: #2C6BB2;
+  color: #222;
 }
 
 #web .p_desc {
@@ -796,7 +796,6 @@ body {
   left: 60px;
   bottom: 0;
   padding: 18px 16px 18px 18px;
-  font-family: "Pistilli";
   text-transform: uppercase;
   font-size: 199px;
   color: 353232;
@@ -838,7 +837,7 @@ body {
 
 #web .panerl .panerl_2 {
   left: 60px;
-  width: 360%;
+  width: 530%;
   display: flex;
 }
 
@@ -856,7 +855,7 @@ body {
   height: 100%;
   background: #fff;
   z-index: 10;
-  color: #2C6BB2;
+  color: #111;
   font-weight: 500;
   border-left: 1px solid #000;
   cursor: pointer;
@@ -1755,6 +1754,114 @@ body {
 }
 
 .outbackfbox .outback_desc .outback_logo img {
+  height: 100%;
+}
+
+/*깔끄미시작*/
+.cleanbox {
+  display: flex;
+  margin-left: 800px;
+}
+
+.cleanbox .slide_wrap {
+  position: relative;
+}
+
+.cleanbox .slide_wrap .monitor {
+  width: 800px;
+  height: 700px;
+}
+
+.cleanbox .slide_wrap .monitor_box {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  background: url(../images/깔끄미청소.png) no-repeat;
+  width: 753px;
+  height: 372px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
+}
+
+.cleanbox .slide_wrap .bottom_box:hover {
+  background-position: bottom;
+}
+
+.cleanbox .slide_wrap .tablet {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  left: 50px;
+  bottom: 98px;
+}
+
+.cleanbox .slide_wrap .tablet_box {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: url(../images/깔끄미청소-태블릿.png) no-repeat;
+  width: 270px;
+  height: 370px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
+}
+
+.cleanbox .slide_wrap .mobile {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: -1px;
+  bottom: 221px;
+}
+
+.cleanbox .slide_wrap .mobile_box {
+  position: absolute;
+  top: 64px;
+  left: 27px;
+  background: url(../images/깔끄미청소-mo.png) no-repeat;
+  width: 147px;
+  height: 274px;
+  background-size: cover;
+  transition: 3s;
+  background-position: top;
+}
+
+.cleanbox .clean_desc {
+  margin-left: 100px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.cleanbox .clean_desc .clean_logo h3 {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+  line-height: 50px;
+}
+
+.cleanfbox .clean_info span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+  padding-bottom: 10px;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+.cleanbox .clean_info p {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #666;
+  font-weight: 300;
+}
+
+.cleanbox .clean_desc .clean_logo img {
   height: 100%;
 }
 
