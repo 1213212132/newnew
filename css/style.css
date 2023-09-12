@@ -358,7 +358,7 @@ body {
   position: relative;
   overflow: hidden;
   display: block;
-  color: #2C6BB2;
+  color: #111;
   font-size: 27px;
   font-weight: 500;
   height: 100px;
@@ -487,7 +487,7 @@ body {
 }
 
 #home .content .tit .desc h2 {
-  font-family: "GongGothicMedium";
+  font-family: "Pretendard-Regular";
   font-size: 84px;
   margin: 10px 0px;
   width: 600px;
@@ -657,7 +657,7 @@ body {
   width: 1606px;
   height: 81vh;
   margin: auto;
-  border: 3px solid #2C6BB2;
+  border: 3px solid #ddd;
   display: flex;
   flex-wrap: wrap;
 }
@@ -676,7 +676,7 @@ body {
 }
 
 #about .card h2 {
-  font-family: "KyoboHandwriting2020A";
+  font-family: "Pretendard-Regular";
   font-size: 36px;
   padding: 16px 0px;
   color: #000;
@@ -727,8 +727,8 @@ body {
   display: block;
   width: 1.5em;
   height: 1.5em;
-  border-bottom: 3px solid #2C6BB2;
-  border-right: 3px solid #2C6BB2;
+  border-bottom: 3px solid #999;
+  border-right: 3px solid rgba(153, 153, 153, 0.6);
   transform: rotate(45deg);
   margin: -10px;
   animation: animate-arrows 2s infinite;
@@ -768,7 +768,7 @@ body {
 }
 
 #web .left_nav h2 {
-  font-family: "KyoboHandwriting2020A";
+  font-family: "Pretendard-Regular";
   writing-mode: vertical-rl;
   position: absolute;
   width: 147px;
@@ -897,7 +897,7 @@ body {
   font-weight: 500;
   letter-spacing: -2.5px;
   box-shadow: inset 0 0 0 4px #cbd4d9;
-  color: #888;
+  color: #555;
   transition: color 0.25s 0.08;
   position: relative;
 }
@@ -1877,6 +1877,14 @@ body {
   font-size: 50px;
 }
 
+.panerl_3 .guid {
+  position: absolute;
+  font-size: 20px;
+  top: 850px;
+  left: 110px;
+  animation: keyword_ani 0.5s 0.2s ease infinite alternate;
+}
+
 .panerl_3 .swiper {
   width: 100%;
   position: absolute;
@@ -1919,13 +1927,13 @@ body {
 .panerl_3 .s_tit {
   font-size: 65px;
   font-weight: 600;
-  font-family: "GongGothicMedium";
+  font-family: "Pretendard-Regular";
   color: #333333;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .panerl_3 .mark {
-  border-bottom: 4px solid #2C6BB2;
+  border-bottom: 4px solid #fff;
   font-size: 24px;
   width: 93px;
   position: absolute;
@@ -1984,13 +1992,13 @@ body {
 .panerl .s_tit {
   font-size: 65px;
   font-weight: 600;
-  font-family: "GongGothicMedium";
+  font-family: "Pretendard-Regular";
   color: #333333;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .panerl .mark {
-  border-bottom: 4px solid #2C6BB2;
+  border-bottom: 4px solid #fff;
   font-size: 24px;
   width: 93px;
   position: absolute;
@@ -2131,13 +2139,12 @@ body {
 }
 
 #contact .contact_box > h2 {
-  font-family: "Pistilli";
+  font-family: "Pretendard-Regular";
   position: absolute;
   left: -32px;
   top: -67px;
   z-index: 10;
   font-size: 120px;
-  color: #353E29;
   text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -2162,7 +2169,7 @@ body {
 
 #contact .contact_box .c_box .con_left .hover {
   position: static;
-  font-family: "GongGothicMedium";
+  font-family: "Pretendard-Regular";
   font-size: 45px;
   letter-spacing: 10px;
 }
@@ -2237,7 +2244,7 @@ body {
 }
 
 #contact .contact_box .c_box .con_right .address ul li {
-  font-family: "GongGothicMedium";
+  font-family: "Pretendard-Regularm";
   font-size: 18px;
   margin: 10px 0;
 }
@@ -2247,7 +2254,7 @@ body {
 }
 
 #contact .contact_box .c_box .con_right .address ul li:nth-child(4) {
-  font-family: "KyoboHandwriting2020A";
+  font-family: "Pretendard-Regular";
 }
 
 #contact .to_top {
@@ -2258,8 +2265,8 @@ body {
 }
 
 #contact .to_top a:hover {
-  background: #353E29;
-  border: 1px solid #353E29;
+  background: #221f1f;
+  border: 1px solid #fff;
   color: #fff;
 }
 
