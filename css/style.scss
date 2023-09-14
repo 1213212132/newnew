@@ -417,6 +417,7 @@ body {
 
 
 #home .nav {
+    font-family: 'ChosunSm';
     position: relative;
     margin: 10px;
     z-index: 20;
@@ -526,6 +527,7 @@ body {
 }
 
 #home .content .tit .desc {
+    font-family: 'ChosunSm';
     position: absolute;
     left: 30%;
     transform: translate(50%, 0);
@@ -541,6 +543,7 @@ body {
     display: inline-block;
     font-size: 60px;
     letter-spacing: -6px;
+
 }
 
 #home .content .tit .desc .keyword span:nth-child(1) {
@@ -572,7 +575,7 @@ body {
 }
 
 #home .content .tit .desc h2 {
-    font-family: 'Pretendard-Regular';
+    font-family: 'ChosunSm';
     font-size: 84px;
     margin: 10px 0px;
     width: 600px;
@@ -598,6 +601,10 @@ body {
     display: none;
 }
 
+#home .content .tit .desc p {
+    line-height: 1.5;
+}
+
 #home .content .tit .desc p:nth-of-type(2) {
     display: none;
 }
@@ -611,6 +618,7 @@ body {
 #home .content {
 
     justify-content: flex-end;
+
 }
 
 #home .content .tit {
@@ -747,14 +755,16 @@ body {
     height: 100vh;
     background-color: #fff;
 
+    font-family: 'ChosunSm';
     background-size: cover;
 }
 
 #about>h2 {
-    font-family: 'Pretendard-Regular';
+
+    font-family: 'ChosunSm';
     text-align: center;
-    font-size: 90px;
-    padding: 9px 0px;
+    font-size: 60px;
+    padding: 20px 0px;
     color: #222;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -813,7 +823,7 @@ body {
 }
 
 #about .card h2 {
-    font-family: 'Pretendard-Regular';
+    font-family: 'ChosunSm';
     font-size: 36px;
     padding: 16px 0px;
     color: #000;
@@ -828,6 +838,7 @@ body {
     line-height: 29px;
     list-style: disc;
     margin-left: 20px;
+    color: #666;
 }
 
 #about .card2 ul li {
@@ -909,7 +920,8 @@ body {
 }
 
 #web .left_nav h2 {
-    font-family: 'Pretendard-Regular';
+
+    font-family: 'ChosunSm';
     writing-mode: vertical-rl;
     position: absolute;
     width: 147px;
@@ -929,6 +941,7 @@ body {
 
 #web .p_desc h2 {
     position: absolute;
+    font-family: 'Giants-Inline';
     left: 60px;
     bottom: 0;
     padding: 18px 16px 18px 18px;
@@ -952,11 +965,21 @@ body {
     width: 1920px;
     left: 88%;
     top: 0;
+    font-family: 'ChosunSm';
+}
+
+#web .panerl h3 {
+    font-family: 'ChosunSm';
+}
+
+#web .panerl p {
+    line-height: 1.3;
 }
 
 #web .panerl .panerl_1,
 #web .panerl .panerl_2,
 #web .panerl .panerl_3 {
+
     position: absolute;
     left: 60px;
     top: 0;
@@ -2144,6 +2167,8 @@ body {
     font-size: 20px;
     top: 850px;
     left: 110px;
+
+    font-family: 'ChosunSm';
     animation: keyword_ani 0.5s 0.2s ease infinite alternate;
 }
 
@@ -2192,9 +2217,9 @@ body {
 }
 
 .panerl_3 .s_tit {
-    font-size: 65px;
+    font-size: 50px;
     font-weight: 600;
-    font-family: 'Pretendard-Regular';
+    font-family: 'ChosunSm';
     color: #333333;
     text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgb(0 0 0 / 15%);
 }
@@ -2259,7 +2284,8 @@ body {
 .panerl .s_tit {
     font-size: 65px;
     font-weight: 600;
-    font-family: 'Pretendard-Regular';
+
+    font-family: 'ChosunSm';
     color: #333333;
     text-shadow: 2px 2px 0px #ffffff, 5px 4px 0px rgb(0 0 0 / 15%);
 }
@@ -2317,6 +2343,8 @@ body {
 
 #contact {
     position: fixed;
+
+    font-family: 'ChosunSm';
     left: 0;
     top: 0;
     width: 100%;
@@ -2407,7 +2435,8 @@ body {
 }
 
 #contact .contact_box>h2 {
-    font-family: 'Pretendard-Regular';
+
+    font-family: 'ChosunSm';
     position: absolute;
     left: -32px;
     top: -67px;
@@ -2439,7 +2468,7 @@ body {
 
 #contact .contact_box .c_box .con_left .hover {
     position: static;
-    font-family: 'Pretendard-Regular';
+
     font-size: 45px;
     letter-spacing: 10px;
 }
@@ -2516,7 +2545,7 @@ body {
 }
 
 #contact .contact_box .c_box .con_right .address ul li {
-    font-family: 'Pretendard-Regularm';
+
     font-size: 18px;
     margin: 10px 0;
 }
@@ -2525,9 +2554,7 @@ body {
     padding-right: 10px;
 }
 
-#contact .contact_box .c_box .con_right .address ul li:nth-child(4) {
-    font-family: 'Pretendard-Regular';
-}
+#contact .contact_box .c_box .con_right .address ul li:nth-child(4) {}
 
 
 #contact .to_top {
