@@ -632,17 +632,6 @@ body {
   background-size: cover;
 }
 
-#about > h2 {
-  font-family: "ChosunSm";
-  text-align: center;
-  font-size: 60px;
-  padding: 20px 0px;
-  color: #222;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
-}
-
 #about .about_bg {
   position: absolute;
   left: 0;
@@ -664,7 +653,8 @@ body {
   width: 1606px;
   height: 81vh;
   margin: auto;
-  border: 3px solid #ddd;
+  top: 9%;
+  border: 3px solid #f9f9f9;
   display: flex;
   flex-wrap: wrap;
 }
@@ -690,6 +680,10 @@ body {
 }
 
 #about .card span {
+  font-size: 21px;
+}
+
+#about .card .arrow-right span {
   font-size: 20px;
 }
 
@@ -699,6 +693,7 @@ body {
   list-style: disc;
   margin-left: 20px;
   color: #666;
+  line-height: 1.7;
 }
 
 #about .card2 ul li {
@@ -780,7 +775,7 @@ body {
   writing-mode: vertical-rl;
   position: absolute;
   width: 147px;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   left: -100px;
   font-size: 32px;
@@ -790,19 +785,19 @@ body {
 #web .p_desc {
   width: 1700px;
   height: 100%;
-  background: url(../images/desc_bg.png) no-repeat -40px center;
+  background: url(../images/b.png) no-repeat -40px center;
   background-size: cover;
 }
 
 #web .p_desc h2 {
   position: absolute;
-  font-family: "Giants-Inline";
+  font-family: "ChosunSm";
   left: 60px;
   bottom: 0;
   padding: 18px 16px 18px 18px;
   text-transform: uppercase;
-  font-size: 199px;
-  color: 353232;
+  font-size: 180px;
+  color: #353232;
 }
 
 #web .p_desc .hand {
@@ -893,7 +888,7 @@ body {
 /* btn common */
 .btn {
   position: relative;
-  left: 130px;
+  left: 100px;
   top: 10px;
   margin-top: 50px;
 }
@@ -908,9 +903,9 @@ body {
 .btn ul li a {
   display: block;
   padding: 10px 0px;
-  font-size: 33px;
+  font-size: 28px;
   text-align: center;
-  width: 332px;
+  width: 220px;
   font-weight: 500;
   letter-spacing: -2.5px;
   box-shadow: inset 0 0 0 4px #cbd4d9;
